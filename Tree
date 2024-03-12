@@ -1,0 +1,29 @@
+class tree_node:
+
+  def __init__(self):
+    self.data=data
+    self.left=None
+    self.right=None
+
+class binary_tree:
+  def __init__(self):
+    self.root=None
+  
+  def insert_node(self,data):
+    
+    if self.root==None:
+      self.root=data
+    
+    elif self.root.data > data:
+      self.root.left=insert_node(self.root.left,data)
+    
+    elif self.root.data < data:
+      self.root.right=insert_node(self.root.right,data)
+  
+  def print_bt(self):
+    
+
+if __name__=='__main__':
+  b=binary_tree()
+  b.insert_node(10)
+    
