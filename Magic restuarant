@@ -1,0 +1,16 @@
+total=12
+no=3
+left=1
+right=total
+flag=1
+while right-left>no:
+  if flag:
+    left+=3
+    flag=0
+  else:
+    right-=3
+    flag=1 
+if flag:
+  print(right)
+else:
+  print(left)
