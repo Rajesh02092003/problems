@@ -1,0 +1,9 @@
+import calendar
+d=int(input())
+m=int(input())
+y=int(input())
+print(max(max(calendar.monthcalendar(y,m))))
+if d<=max(max(calendar.monthcalendar(y,m))):
+  print("day valid")
+else:
+  print("invalid")
